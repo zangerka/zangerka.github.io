@@ -13,6 +13,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <!-- Bootstrap core CSS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+  <link rel="manifest" href="/static/images/site.webmanifest">
+  <link rel="mask-icon" href="/static/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-config" content="/static/images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
   <style>
     .container {
       max-width: 960px;
@@ -34,36 +45,6 @@
       text-decoration: none;
     }
 
-    .product-device {
-      position: absolute;
-      right: 10%;
-      bottom: -30%;
-      width: 300px;
-      height: 540px;
-      background-color: #333;
-      border-radius: 21px;
-      transform: rotate(30deg);
-    }
-
-    .product-device::before {
-      position: absolute;
-      top: 10%;
-      right: 10px;
-      bottom: 10%;
-      left: 10px;
-      content: "";
-      background-color: rgba(255, 255, 255, .1);
-      border-radius: 5px;
-    }
-
-    .product-device-2 {
-      top: -25%;
-      right: auto;
-      bottom: 0;
-      left: 5%;
-      background-color: #e5e5e5;
-    }
-
     .flex-equal>* {
       flex: 1;
     }
@@ -72,6 +53,11 @@
       .flex-md-equal>* {
         flex: 1;
       }
+    }
+
+    .logo {
+      max-width: 11rem;
+      margin: 0;
     }
   </style>
 </head>
@@ -96,6 +82,9 @@
   <main>
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <div class="m-2">
+          <img class="img img-fluid logo" src="/static/images/logo.png">
+        </div>
         <h1 class="display-4 fw-normal">ЗАҢГЕР</h1>
         <p class="lead fw-normal">ТОО «Коллекторское агентство «ЗАҢГЕР»</p>
         <p class="lead fw-normal">Hомер учетной регистрации: 02.К.20.033</p>
@@ -105,14 +94,14 @@
     <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
       <div id="debt" class="bg-dark me-md-3 pt-3 px-3 py-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-          <h2 class="display-5">Взыск долга</h2>
-          <p class="lead">Взыскания дебиторской задолженности.</p>
+          <h2 class="display-5">Взыскание долга</h2>
+          <p class="lead">Взыскание дебиторской задолженности.</p>
         </div>
       </div>
       <div id="coll" class="bg-light me-md-3 pt-3 px-3 py-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
           <h2 class="display-5">Коллекторские услуги</h2>
-          <p class="lead">Досудебное взыскание задолженности..</p>
+          <p class="lead">Досудебное взыскание задолженности.</p>
         </div>
       </div>
     </div>
@@ -125,7 +114,7 @@
         </div>
 
       </div>
-      <div id="cons" class="bg-primary me-md-3 pt-3 px-3 py-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div id="cons" class="bg-dark me-md-3 pt-3 px-3 py-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
           <h2 class="display-5">Консультационная деятельность</h2>
           <p class="lead">Консультация по вопросам взыскания или погашения задолженности.</p>
@@ -134,6 +123,82 @@
       </div>
     </div>
 
+    <div class="position-relative overflow-hidden pt-3 px-3 p-md-5 m-md-3 bg-light">
+      <div class="container">
+        <h2 class="display-5 fw-normal">Новости</h2>
+        <div class="bg-dark text-white overflow-hidden px-3 py-3 py-md-5 px-md-5">
+          <h3 class="">Объявляние о проведении торгов по продаже недвижимого имущества</h3>
+          <p class="lead">Доверенное лицо ТОО «Коллекторская компания «ЗАҢГЕР» объявляет о проведении торгов по продаже
+            недвижимого имущества:
+          </p>
+          <p>Объект: нежилое помещение - здание гостиничного комплекса «DoubleTree by Hilton Almaty», с движимым
+            имуществом - оборудованием, мебелью (кадастровый номер 20:311:015:130:1), общей площадью 16 196,40 кв.м., с
+            земельным участком (кадастровый номер 20:311:015:130), общей площадью 0,2581 га, расположенное по адресу:
+            г.Алматы, Алмалинский район, ул. Досмухамбетова, д.115. Имеются обременения.
+          </p>
+          <p>Обязательное условие для победителя торгов: в целях сохранения социальной стабильности в гостиничном
+            комплексе необходимо сохранить количество сотрудников и работников гостиничного комплекса в соответствии с
+            действующим штатным расписанием, профиль деятельности реализуемого объекта.
+          </p>
+          <p>Для участия в торгах необходимо:<br>
+            1. оплатить и предоставить документы об оплате гарантийного взноса либо предоставить справку с банка о
+            наличии открытой кредитной линии на сумму стартовой цены лота. Кредитная линия должна быть открыта до даты
+            проведения торгов - 31 августа 2021 года.<br>
+            2. подать заявку для участия в торгах в день предоставления документов, указанных в пункте 1. до 9 часов 30
+            минут 31 августа 2021 года.
+          </p>
+          <p>В случае отсутствия документов, подтверждающих наличие гарантийного взноса или открытия кредитной линии на
+            сумму стартовой цены лота, претендент не допускается к участию в торгах.
+          </p>
+          <p>
+            Реквизиты счета для перечисления гарантийного взноса:<br>
+            БИН 201240013220, ИИК KZ KZ7096502F0013318045, Филиал АО "ForteBank" в г. Алматы, SWIFT код:IRTYKZKA, БИН
+            Банка: 980341000286
+          </p>
+          <p>Форма торгов: Аукцион</p>
+          <p>Доступ к участию в торгах: Публичные торги</p>
+          <p>Дата окончания приема заявок: 31.08.2021 9:30</p>
+          <p>Дата и время начала торгов: 31.08.2021 10:00</p>
+          <p>Стартовая цена лота: имущественного комплекса в виде отеля (недвижимость - 5 110 514 021 тенге,
+            оборудование – 60 223 827 тенге) </p>
+          <p>Шаг снижения: 155 122 135 тенге (3%)</p>
+          <p>Шаг повышения: 258 536 892 тенге (5%)</p>
+          <p>Размер гарантийного взноса в тенге: 258 536 892 тенге (5%)</p>
+          <p>Покупная цена имущественного комплекса оплачивается в течение 10 календарных дней со дня проведения торгов
+            на указанный счет.</p>
+          <p>КОНТАКТНАЯ ИНФОРМАЦИЯ ДОВЕРЕННОГО ЛИЦА:<br>
+            Салханов Т., Алматы, мкр.Коктем-2, дом 22, офис 601, e-mail: zangerk@bk.ru, +7 708 375 1994
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
+      <div class="container">
+        <h2 class="display-5 fw-normal">Контакты</h2>
+        <p><a class="text-decoration-none text-dark" href="mailto:aze@zangerka.kz"><strong>E-mail:</strong>
+            aze@zangerka.kz</a></p>
+        <p><a class="text-decoration-none text-dark" href="tel:+77015950337"><strong>Телефон:</strong> +7 701 595
+            0337</a></p>
+        <p class="text-decoration-none text-dark">
+          <strong>Адрес:</strong> г. Алматы, мкр. Коктем 2, дом 22, Б\Ц «Весновка» , офис 602,<br>
+          индекс 050040, отделение №40, абонентский ящик № 4233
+        </p>
+      </div>
+    </div>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
+      <div class="container">
+        <h2 class="display-5 fw-normal">Реквизиты</h2>
+        <p><strong>Бенефициар:</strong> ТОО «Коллекторское агентство «ЗАҢГЕР»</p>
+        <p><strong>БИН:</strong> 201240013220</p>
+        <p><strong>Текущий счет (IBAN) в KZT:</strong> KZ7096502F0013318045</p>
+        <p><strong>Банк:</strong> Филиал АО "ForteBank" в г. Алматы</p>
+        <p><strong>SWIFT код:</strong> IRTYKZKA</p>
+        <p><strong>БИН Банка:</strong> 980341000286</p>
+      </div>
+
+    </div>
 
   </main>
 
@@ -191,7 +256,6 @@
       <div class="col-6 col-md">
         <h5>О нас</h5>
         <ul class="list-unstyled text-small">
-
           <li>
             <p class="link-secondary">
               Коллекторское агентство ЗАҢГЕР используя современные подходы и модели по урегулированию задолженности не
@@ -206,9 +270,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
